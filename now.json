@@ -1,11 +1,11 @@
 {
+  "name": "sms-api",
   "version": 2,
   "builds": [
-    { "src": "server/index.js", "use": "@now/node" }
+    { "src": "server/index.js", "use": "@now/node-server" }
   ],
   "env": {
-    "SERVER": "127.0.0.1:27017",
     "DATABASE_NAME": "output-sms",
-    "NODE_ENV": "development"
+    "NODE_ENV": "production"
   }
 }
