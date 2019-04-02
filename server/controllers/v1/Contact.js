@@ -4,7 +4,6 @@ class ContactController {
   static async addContactToPhone(req, res) {
     try {
       const { name, number } = req.body;
-      console.log('name, number ===> ', req.body);
       if (!name) {
         return res.status(400).send({
           message: 'Name is required',
