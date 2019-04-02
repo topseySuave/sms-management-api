@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "server/index.js", "use": "@now/node" }
+  ],
+  "env": {
+    "SERVER": "127.0.0.1:27017",
+    "DATABASE_NAME": "output-sms",
+    "NODE_ENV": "development"
+  }
+}
