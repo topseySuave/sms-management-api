@@ -21,4 +21,5 @@ NODE_ENV=development
 8. Navigate to the API home `http://localhost:3000/api/v1/`
 
 ### Other features are
-##### Versioning: the API routes and controllers are version for backward compactability
+##### Versioning:
+The API routes and controllers are version for backward compactability
