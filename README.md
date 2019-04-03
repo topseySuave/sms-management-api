@@ -18,6 +18,7 @@ DATABASE_NAME=<DB Name>
 NODE_ENV=development
 ```
 you can visit the [API docs](https://documenter.getpostman.com/view/2928491/S1EH21Zo) for reference on how to use the API.
+
 8. Start the app `npm run dev`
 9. Navigate to the API home `http://localhost:3000/api/v1/`
 
