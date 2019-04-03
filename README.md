@@ -17,8 +17,9 @@ SERVER=127.0.0.1:27017
 DATABASE_NAME=<DB Name>
 NODE_ENV=development
 ```
-7. Start the app `npm run dev`
-8. Navigate to the API home `http://localhost:3000/api/v1/`
+you can visit the [API docs](https://documenter.getpostman.com/view/2928491/S1EH21Zo) for reference on how to use the API.
+8. Start the app `npm run dev`
+9. Navigate to the API home `http://localhost:3000/api/v1/`
 
 ### Other features are
 #### Versioning:
