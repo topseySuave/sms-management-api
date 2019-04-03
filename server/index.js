@@ -9,6 +9,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // initiallize the mongo database
+// eslint-disable-next-line no-unused-vars
 const instance = new DatabaseInstance();
 
 // load all routes
@@ -16,7 +17,7 @@ routerV1(app);
 
 app.use('/', (req, res) => {
   res.send({
-    message: 'SMS management API by Gabriel Micah - Software developer'
+    message: 'SMS management API by Gabriel Micah - Software developer',
   });
 });
 
