@@ -1,5 +1,5 @@
 ## SMS management API
-A simple API system for sms management. Visit the hosted version [here](https://sms-api.topseysuave.now.sh)
+A simple API system for sms management. Visit the hosted version [here](https://smsapi-m.herokuapp.com/)
 
 ### API Documentation
 Visit [here](https://documenter.getpostman.com/view/2928491/S1EH21Zo) to see the documentation for this API
