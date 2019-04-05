@@ -2,35 +2,35 @@ import SmsModel from '../../model/Sms';
 
 class SmsController {
   static async addSms(req, res) {
-    // try {
-    const {
-      message,
-      sender,
-      receiver,
-      status,
-    } = req.body;
+    try {
+      const {
+        message,
+        sender,
+        receiver,
+        status,
+      } = req.body;
 
-    // We first check if all fields are provided
-    if (!message || !sender || !receiver || !status) {
-      return res.status(400).send({
-        message: 'All fields are required',
-      });
-    }
-    const sms = new SmsModel(req.body);
-
-    await sms.save((err) => {
-      if (err) {
-        return res.status(422).send({
-          message: 'Your SMS was not sent, please try again later ',
+      // We first check if all fields are provided
+      if (!message || !sender || !receiver || !status) {
+        return res.status(400).send({
+          message: 'All fields are required',
         });
       }
-      return res.status(200).send({
-        message: 'Your sms was sent successfully',
+      const sms = new SmsModel(req.body);
+
+      await sms.save((err) => {
+        if (err) {
+          return res.status(422).send({
+            message: 'Your SMS was not sent, please try again later ',
+          });
+        }
+        return res.status(200).send({
+          message: 'Your sms was sent successfully',
+        });
       });
-    });
-    // } catch (error) {
-    //   console.log('We could not process this request at this time', error);
-    // }
+    } catch (error) {
+      console.log('We could not process this request at this time', error);
+    }
   }
 
   static async fetchSms(req, res) {

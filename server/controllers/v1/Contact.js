@@ -1,6 +1,23 @@
 import ContactModel from '../../model/Contact';
 
 class ContactController {
+  static async getContacts(req, res) {
+    ContactModel
+      .find()
+      .exec((err, contacts) => {
+        if (err) {
+          return res.send({
+            message: 'We could not retrieve your contacts at this time, please check back later',
+          });
+        }
+
+        return res.status(200).send({
+          message: 'contacts retrieved successfully',
+          contacts,
+        });
+      });
+  }
+
   static async addContactToPhone(req, res) {
     try {
       const { name, number } = req.body;
